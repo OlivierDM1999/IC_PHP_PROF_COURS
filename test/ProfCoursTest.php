@@ -256,14 +256,19 @@ class ProfCoursTest extends TestCase
         $expected = self::$prof_a[0]->__toString();
         $this->assertEquals($expected, $prof_str, "Prof \n");
 
+
+
+        print __METHOD__."\n";
+        $conn = $this->getConnection();
+
         // Cours
-        
-        /**
-        *
-        * Question 10 :	Dans la fonction « testPrintOne() », 
-        * s’inspirer de test de sélection et affichage du premier prof pour tester la sélection et l’affichage du premier cours dans la base.
-        *
-        */
+        $cours = Cours::printOne($conn);
+        $cours_str = $cours->__toString();
+        print "########## - 1e COURS EN BASE - ########## \n";
+        print $cours_str."\n";
+        print "################################################################\n\n";
+        $expected = self::$cours_a[0]->__toString();
+        $this->assertEquals($expected, $cours_str, "Cours \n");
         
            
 
