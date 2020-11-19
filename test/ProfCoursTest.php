@@ -320,7 +320,7 @@ class ProfCoursTest extends TestCase
         $this->assertTrue($val, "Update du prof num $idProf ...\n");
 
 
-
+        $conn = $this->getConnection();
         // Cours
 
         $cours = new Cours($this->intitule, $this->duree, $idProf);
