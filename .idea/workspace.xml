@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea339d00-00e3-45f8-bb98-c3b585f28c74" name="Default Changelist" comment="add lines for no errors">
+    <list default="true" id="ea339d00-00e3-45f8-bb98-c3b585f28c74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ProfCoursTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProfCoursTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605794059643</updated>
-      <workItem from="1605794061333" duration="1873000" />
+      <workItem from="1605794061333" duration="2193000" />
     </task>
     <task id="LOCAL-00001" summary="add lines for no errors">
       <created>1605795341158</created>
@@ -54,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605795341158</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add lines for no errors">
+      <created>1605796107495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605796107495</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -65,10 +71,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="add lines for no errors" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="516" y="114" key="CommitChangelistDialog2" timestamp="1605795526985">
+    <state x="516" y="114" key="CommitChangelistDialog2" timestamp="1605796106308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="516" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605795526985" />
+    <state x="516" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605796106308" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605796117720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605796117720" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605795373272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
