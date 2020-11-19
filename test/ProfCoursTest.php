@@ -319,8 +319,7 @@ class ProfCoursTest extends TestCase
         $this->assertEquals($expected_prof_str, $record_prof->__toString(), "Update du prof $idProf ...\n");
         $this->assertTrue($val, "Update du prof num $idProf ...\n");
 
-        print __METHOD__."\n";
-        $conn = $this->getConnection();
+
 
         // Cours
 
