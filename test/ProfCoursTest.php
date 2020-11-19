@@ -319,14 +319,17 @@ class ProfCoursTest extends TestCase
         $this->assertEquals($expected_prof_str, $record_prof->__toString(), "Update du prof $idProf ...\n");
         $this->assertTrue($val, "Update du prof num $idProf ...\n");
 
+        print __METHOD__."\n";
+        $conn = $this->getConnection();
+
         // Cours
-        
-        /**
-        *
-        * Question 11 :	Dans la fonction « testUpdateOne() », 
-        * s’inspirer de test de la modification du prof avec idProf= 10 pour tester la modification du cours dans ayant comme idCours = 9.
-        *
-        */
+
+        $cours = new Cours($this->nom, $this->prenom, $this->date, $this->lieu);
+        $val = $cours->updateOne($conn, $idCours);
+        $expected_cours_str = $cours->__toString();
+        $record_cours = Cours::printOne($conn, $idCours);
+        $this->assertEquals($expected_cours_str, $record_cours->__toString(), "Update du cours $idCours ...\n");
+        $this->assertTrue($val, "Update du cours num $idCours ...\n");
        
         
         
