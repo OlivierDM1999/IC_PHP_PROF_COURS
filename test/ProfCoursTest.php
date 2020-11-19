@@ -319,30 +319,29 @@ class ProfCoursTest extends TestCase
         $this->assertEquals($expected_prof_str, $record_prof->__toString(), "Update du prof $idProf ...\n");
         $this->assertTrue($val, "Update du prof num $idProf ...\n");
 
-
-        $conn = $this->getConnection();
         // Cours
 
-        $cours = new Cours($this->intitule, $this->duree, $idProf);
+        $cours = new Cours($this->intitule, $this->duree, 10);
         $val = $cours->updateOne($conn, $idCours);
-        $expected_cours_str = $cours->toString();
+        $expected_cours_str = $cours->__toString();
         $record_cours = Cours::printOne($conn, $idCours);
-        $this->assertEquals($expected_cours_str, $record_cours->toString(), "Update du cours $idCours ...\n");
+        $this->assertEquals($expected_cours_str, $record_cours->__toString(), "Update du cours $idCours ...\n");
         $this->assertTrue($val, "Update du cours num $idCours ...\n");
-       
-        
-        
+
+
+
+
         // Prof
-        
+
         print "########## - LISTE DES PROFS - APRES UPDATE DU PROF NUM $idProf ########## \n";
         foreach ( $record_prof_a = Prof::printAll($conn) as $record_prof ) {
             print $record_prof;
         }
         print "################################################################\n\n";
-        
-        
+
+
         // Cours
-        
+
         print "@@@@@@@@@@@@@ - LISTE DES COURS - APRES UPDATE DU COURS NUM $idCours @@@@@@@@@@@@@ \n";
         foreach( $record_cours_a = Cours::printAll($conn) as $record_cours) {
             print $record_cours;
